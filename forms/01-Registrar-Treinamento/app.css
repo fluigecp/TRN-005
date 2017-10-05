@@ -1,0 +1,10 @@
+/* your css code! */
+
+.labelForRadio {
+    font-weight: normal !important;
+    cursor: pointer;
+}
+
+#numSolicMatrizContainer {
+    margin: 10px 0px 10px 0px;
+}
