@@ -332,7 +332,7 @@ var manipulateDOM = (function () {
         var numSolicMatriz = $("#numSolicMatriz").val()
         if (numSolicMatriz != "" && numSolicMatriz != undefined && numSolicMatriz != null) {
             var htmlMatriz = "<a href='/portal/p/1/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=" +
-                numSolicMatriz + "' target='_blank'><button class='btn btn-primary btn-insert' type='button'>Matriz de treinamento de origem</button></a>"
+                numSolicMatriz + "' target='_blank'><button class='btn btn-primary btn-insert' type='button'><span class='fluigicon fluigicon-process-details'></span> Matriz de treinamento de origem</button></a>"
             $("#numSolicMatrizContainer").html(htmlMatriz)
         }
     }
