@@ -32,9 +32,9 @@ function getData() {
     responsavelAplicacao = modo == "VIEW" ? $("span[name*='responsavelTreinamento']").html() : $("input[name*='responsavelTreinamento']").val();
     instrutor = modo == "VIEW" ? $("span[name*='instrutor']").html() : $("input[name*='instrutor']").val();
     $.each( $( '#tbRegistroTreinamento tbody tr:not(:first(), div.filter-panel tr)' ), function(index, val) {
-        var setor = modo == "VIEW" ?  $(this).find("span[name*='setor___']").html() : $(this).find("input[name*='setor___']").val(); 
-        var matricula = modo == "VIEW" ?  $(this).find("span[name*='matricula___']").html() : $(this).find("input[name*='matricula___']").val(); 
-        var nome = modo == "VIEW" ?  $(this).find("span[name*='nome___']").html() : $(this).find("input[name*='nome___']").val(); 
+        var setor = modo == "VIEW" ?  $(this).find("span[name*='setor___']").html() : $(this).find("[name*='setor___']").val(); 
+        var matricula = modo == "VIEW" ?  $(this).find("span[name*='matricula___']").html() : $(this).find("[name*='matricula___']").val(); 
+        var nome = modo == "VIEW" ?  $(this).find("span[name*='nome___']").html() : $(this).find("[name*='nome___']").val(); 
         listaPresenca.push( { "setor": setor, "matricula": matricula, "nome": nome } );
     });
     datas.push( modo == "VIEW" ? $("span[name*='data1']").html() : $("input[name*='data1']").val() );

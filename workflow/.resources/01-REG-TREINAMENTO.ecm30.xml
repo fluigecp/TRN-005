@@ -26,7 +26,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Registrar Treinamento</processId>
-      <version>2</version>
+      <version>3</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>0</formId>
@@ -37,7 +37,7 @@
     <blockedVersion>false</blockedVersion>
     <counterSign>false</counterSign>
     <openInstances>0</openInstances>
-    <bpmnVersion>2</bpmnVersion>
+    <bpmnVersion>1</bpmnVersion>
     <processStates/>
     <favorito>false</favorito>
     <inheritFormSecurity>false</inheritFormSecurity>
@@ -73,8 +73,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>150</positionX>
-      <positionY>430</positionY>
+      <positionX>170</positionX>
+      <positionY>63</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -109,7 +109,7 @@
       <agreementPercentage>0</agreementPercentage>
       <engineAllocationId>Campo Formulário</engineAllocationId>
       <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;responsavelTreinamentoID&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
-      <selectColleague>0</selectColleague>
+      <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
       <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
@@ -124,7 +124,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>264</positionX>
-      <positionY>662</positionY>
+      <positionY>270</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -160,7 +160,7 @@
       <agreementPercentage>0</agreementPercentage>
       <engineAllocationId>Pool Grupo</engineAllocationId>
       <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;WK_TRN-005_Avaliar_Treinamento&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
-      <selectColleague>0</selectColleague>
+      <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
       <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
@@ -175,7 +175,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>370</positionX>
-      <positionY>816</positionY>
+      <positionY>426</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -211,7 +211,7 @@
       <agreementPercentage>0</agreementPercentage>
       <engineAllocationId>Campo Formulário</engineAllocationId>
       <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;responsavelTreinamentoID&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
-      <selectColleague>0</selectColleague>
+      <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
       <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
@@ -226,7 +226,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>500</positionX>
-      <positionY>670</positionY>
+      <positionY>270</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -276,108 +276,7 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>140</positionX>
-      <positionY>520</positionY>
-      <forecastedEffortType>0</forecastedEffortType>
-      <forecastedEffort>0</forecastedEffort>
-      <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
-      <allowanceManagerTime>0</allowanceManagerTime>
-      <frequenceManagerTime>0</frequenceManagerTime>
-      <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>80</bpmnType>
-      <signalId>0</signalId>
-      <counterSign>false</counterSign>
-      <openInstances>0</openInstances>
-      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
-      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
-      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
-      <destinationStates/>
-      <digitalSignature>false</digitalSignature>
-      <executionType>0</executionType>
-    </ProcessState>
-    <ProcessState>
-      <processStatePK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>1</version>
-        <sequence>30</sequence>
-      </processStatePK>
-      <stateName>Serviço inicializador</stateName>
-      <stateDescription>Serviço inicializador</stateDescription>
-      <instruction></instruction>
-      <deadlineTime>0</deadlineTime>
-      <joint>false</joint>
-      <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
-      <selectColleague>0</selectColleague>
-      <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
-      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
-      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
-      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
-      <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
-      <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
-      <automatic>false</automatic>
-      <positionX>264</positionX>
-      <positionY>272</positionY>
-      <forecastedEffortType>0</forecastedEffortType>
-      <forecastedEffort>0</forecastedEffort>
-      <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
-      <allowanceManagerTime>0</allowanceManagerTime>
-      <frequenceManagerTime>0</frequenceManagerTime>
-      <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>82</bpmnType>
-      <signalId>0</signalId>
-      <counterSign>false</counterSign>
-      <openInstances>0</openInstances>
-      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
-      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
-      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
-      <destinationStates/>
-      <digitalSignature>false</digitalSignature>
-      <executionType>1</executionType>
-    </ProcessState>
-    <ProcessState>
-      <processStatePK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>1</version>
-        <sequence>35</sequence>
-      </processStatePK>
-      <stateName>Tratar erro</stateName>
-      <stateDescription>Tratar erro</stateDescription>
-      <instruction></instruction>
-      <deadlineTime>0</deadlineTime>
-      <joint>false</joint>
-      <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId>Grupo</engineAllocationId>
-      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;Processos&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
-      <selectColleague>0</selectColleague>
-      <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
-      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
-      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
-      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
-      <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
-      <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
-      <automatic>false</automatic>
-      <positionX>380</positionX>
+      <positionX>150</positionX>
       <positionY>130</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
@@ -404,53 +303,6 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <version>1</version>
-        <sequence>34</sequence>
-      </processStatePK>
-      <stateName>Intermediário</stateName>
-      <stateDescription>Intermediário</stateDescription>
-      <instruction>Evento intermediário do processo</instruction>
-      <deadlineTime>0</deadlineTime>
-      <joint>false</joint>
-      <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId></engineAllocationId>
-      <engineAllocationConfiguration></engineAllocationConfiguration>
-      <selectColleague>0</selectColleague>
-      <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
-      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>1</allowanceAuthorityTime>
-      <frequenceAuthorityTime>1</frequenceAuthorityTime>
-      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
-      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
-      <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
-      <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
-      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
-      <automatic>false</automatic>
-      <positionX>354</positionX>
-      <positionY>272</positionY>
-      <forecastedEffortType>0</forecastedEffortType>
-      <forecastedEffort>0</forecastedEffort>
-      <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
-      <frequenceManagerTime>0</frequenceManagerTime>
-      <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>43</bpmnType>
-      <signalId>0</signalId>
-      <counterSign>false</counterSign>
-      <openInstances>0</openInstances>
-      <destinationStates/>
-      <digitalSignature>false</digitalSignature>
-      <parentSequence>30</parentSequence>
-    </ProcessState>
-    <ProcessState>
-      <processStatePK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>1</version>
         <sequence>17</sequence>
       </processStatePK>
       <stateName>Aprovado</stateName>
@@ -462,7 +314,7 @@
       <formFolder>0</formFolder>
       <automatic>true</automatic>
       <positionX>523</positionX>
-      <positionY>800</positionY>
+      <positionY>410</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
       <bpmnType>120</bpmnType>
@@ -486,8 +338,8 @@
       <subProcessId></subProcessId>
       <formFolder>0</formFolder>
       <automatic>true</automatic>
-      <positionX>287</positionX>
-      <positionY>504</positionY>
+      <positionX>300</positionX>
+      <positionY>30</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
       <bpmnType>120</bpmnType>
@@ -526,7 +378,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>630</positionX>
-      <positionY>834</positionY>
+      <positionY>444</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -550,7 +402,7 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <expressionOrder>1</expressionOrder>
-        <version>2</version>
+        <version>3</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;treinamentoAprovado&quot;) == &quot;Sim&quot;</condition>
@@ -561,7 +413,7 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <expressionOrder>2</expressionOrder>
-        <version>2</version>
+        <version>3</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;treinamentoAprovado&quot;) == &quot;Não&quot;</condition>
@@ -572,7 +424,7 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <expressionOrder>1</expressionOrder>
-        <version>2</version>
+        <version>3</version>
         <sequence>25</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;atividadeAutomatica&quot;) == &quot;Sim&quot;</condition>
@@ -584,7 +436,7 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <expressionOrder>2</expressionOrder>
-        <version>2</version>
+        <version>3</version>
         <sequence>25</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;atividadeAutomatica&quot;) != &quot;Sim&quot;</condition>
@@ -679,22 +531,6 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <version>1</version>
-        <linkSequence>24</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>4</initialStateSequence>
-      <finalStateSequence>30</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>1</version>
         <linkSequence>27</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
@@ -743,44 +579,12 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <version>1</version>
-        <linkSequence>31</linkSequence>
+        <linkSequence>30</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>30</initialStateSequence>
+      <initialStateSequence>4</initialStateSequence>
       <finalStateSequence>25</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>1</version>
-        <linkSequence>36</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>34</initialStateSequence>
-      <finalStateSequence>35</finalStateSequence>
-      <returnLabel></returnLabel>
-      <name></name>
-      <automaticLink>false</automaticLink>
-      <type>0</type>
-    </ProcessLink>
-    <ProcessLink>
-      <processLinkPK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>1</version>
-        <linkSequence>37</linkSequence>
-      </processLinkPK>
-      <actionLabel></actionLabel>
-      <returnPermited>false</returnPermited>
-      <initialStateSequence>35</initialStateSequence>
-      <finalStateSequence>30</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -949,24 +753,6 @@ function getAttachments(activity, numAnexos, formato){&#xd;
     <WorkflowProcessEvent>
       <workflowProcessEventPK>
         <companyId>1</companyId>
-        <eventId>servicetask30</eventId>
-        <processId>TRN-005</processId>
-        <version>1</version>
-      </workflowProcessEventPK>
-      <eventDescription>function servicetask30(attempt, message) {
- try {
-	 var Service = ServiceManager.getService(&apos;ECMWorkflowEngineService&apos;);
-	 var serviceHelper = Service.getBean();
-  //var serviceLocator = serviceHelper.instantiate(&apos;classe.locator&apos;);
- } catch(error) { 
-	log.error(error);
-	throw error;
- }
-}</eventDescription>
-    </WorkflowProcessEvent>
-    <WorkflowProcessEvent>
-      <workflowProcessEventPK>
-        <companyId>1</companyId>
         <eventId>beforeSendData</eventId>
         <processId>TRN-005</processId>
         <version>1</version>
@@ -1028,7 +814,7 @@ function getAttachments(activity, numAnexos, formato){&#xd;
       <height>172</height>
       <width>621</width>
       <positionX>100</positionX>
-      <positionY>609</positionY>
+      <positionY>219</positionY>
       <stateName>Treinador</stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
@@ -1044,7 +830,7 @@ function getAttachments(activity, numAnexos, formato){&#xd;
       <height>220</height>
       <width>621</width>
       <positionX>100</positionX>
-      <positionY>390</positionY>
+      <positionY>0</positionY>
       <stateName>Usuário Fluig</stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
@@ -1060,7 +846,7 @@ function getAttachments(activity, numAnexos, formato){&#xd;
       <height>141</height>
       <width>621</width>
       <positionX>100</positionX>
-      <positionY>781</positionY>
+      <positionY>391</positionY>
       <stateName>RH</stateName>
       <type>2</type>
       <parentSequence>0</parentSequence>
@@ -1071,38 +857,6 @@ function getAttachments(activity, numAnexos, formato){&#xd;
         <sequence>3</sequence>
       </swimLanePK>
     </SwimLane>
-    <SwimLane>
-      <color>DFDFDF</color>
-      <height>172</height>
-      <width>621</width>
-      <positionX>100</positionX>
-      <positionY>219</positionY>
-      <stateName>Fluig</stateName>
-      <type>2</type>
-      <parentSequence>0</parentSequence>
-      <swimLanePK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>1</version>
-        <sequence>4</sequence>
-      </swimLanePK>
-    </SwimLane>
-    <SwimLane>
-      <color>C0C7CC</color>
-      <height>220</height>
-      <width>621</width>
-      <positionX>100</positionX>
-      <positionY>0</positionY>
-      <stateName>Processos</stateName>
-      <type>2</type>
-      <parentSequence>0</parentSequence>
-      <swimLanePK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>1</version>
-        <sequence>5</sequence>
-      </swimLanePK>
-    </SwimLane>
   </list>
   <list/>
   <list/>
@@ -1111,67 +865,67 @@ function getAttachments(activity, numAnexos, formato){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>2</version>
+        <version>3</version>
         <linkSequence>16</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
       <positionX>316</positionX>
-      <positionY>850</positionY>
+      <positionY>460</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>2</version>
+        <version>3</version>
         <linkSequence>23</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
       <positionX>423</positionX>
-      <positionY>704</positionY>
+      <positionY>305</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>2</version>
-        <linkSequence>24</linkSequence>
+        <version>3</version>
+        <linkSequence>27</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>167</positionX>
-      <positionY>307</positionY>
+      <positionX>329</positionX>
+      <positionY>165</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>2</version>
+        <version>3</version>
+        <linkSequence>28</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>423</positionX>
+      <positionY>80</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>TRN-005</processId>
+        <version>3</version>
+        <linkSequence>28</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>423</positionX>
+      <positionY>304</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>TRN-005</processId>
+        <version>3</version>
         <linkSequence>29</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>192</positionX>
-      <positionY>696</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>2</version>
-        <linkSequence>36</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>432</positionX>
-      <positionY>286</positionY>
-    </ProcessLinkBend>
-    <ProcessLinkBend>
-      <processLinkBendPK>
-        <companyId>1</companyId>
-        <processId>TRN-005</processId>
-        <version>2</version>
-        <linkSequence>37</linkSequence>
-        <bendSequence>1</bendSequence>
-      </processLinkBendPK>
-      <positionX>316</positionX>
-      <positionY>157</positionY>
+      <positionX>203</positionX>
+      <positionY>304</positionY>
     </ProcessLinkBend>
   </list>
   <list/>
@@ -1187,16 +941,6 @@ function getAttachments(activity, numAnexos, formato){&#xd;
       <slotId>1</slotId>
     </ProcessFormField>
   </list>
-  <list>
-    <ProcessStateService>
-      <companyId>1</companyId>
-      <processId>TRN-005</processId>
-      <version>1</version>
-      <sequence>30</sequence>
-      <attempts>0</attempts>
-      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
-      <serviceName>ECMWorkflowEngineService</serviceName>
-    </ProcessStateService>
-  </list>
+  <list/>
   <list/>
 </list>
