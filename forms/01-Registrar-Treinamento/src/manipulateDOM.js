@@ -101,25 +101,32 @@ var manipulateDOM = (function () {
             var regCount = $("#tbRegistroTreinamento table tbody tr.tableBodyRow:not(:first)").length
             if (regCount > 0) {
                 var row = wdkAddChild("tbRegistroTreinamento")
-                $("#setor___" + row).val($("#setor___" + row).closest(".tableBodyRow").prev().find("input[name*=\"setor___\"]").val())
-                if ($("#setor___" + row).val() != "") {
-                    FLUIGC.autocomplete("input#setor___" + row).add({
-                        "departamento": $("#setor___" + row).val()
-                    })
+                var previousSetorFieldId = $("#setor___" + row).closest(".tableBodyRow").prev().find("[name*=setor___]").attr("id");
+                var previousSetorFieldAC = FLUIGC.autocomplete("#"+previousSetorFieldId).destroy().input();
+                var previousSetorFieldACValue = previousSetorFieldAC.$element.val()[0];
+                /* $("#setor___" + row).val($("#setor___" + row).closest(".tableBodyRow").prev().find("select[name*=setor___]").val()[0]);
+                if ($("#setor___" + row).val() != "") { */
+                if (  previousSetorFieldACValue != "" || previousSetorFieldACValue != undefined ) {
+                    FLUIGC.autocomplete("#setor___" + row).add(
+                        previousSetorFieldACValue
+                    ).destroy();
+                    previousSetorFieldAC.removeAll();
+                    previousSetorFieldAC.add(previousSetorFieldACValue);
+                    previousSetorFieldAC.destroy();
                 }
-                $("#nome___" + row).val($("#nome___" + row).closest(".tableBodyRow").prev().find("input[name*=\"nome___\"]").val())
+                $("#nome___" + row).val($("#nome___" + row).closest(".tableBodyRow").prev().find("[name*=nome___]").val()[0]);
                 if ($("#nome___" + row).val() != "") {
-                    FLUIGC.autocomplete("input#nome___" + row).add({
-                        "colleagueName": $("#nome___" + row).val()
-                    })
+                    FLUIGC.autocomplete("select#nome___" + row).add(
+                        $("#nome___" + row).val()
+                    ).destroy();
                 }
-                $("#matricula___" + row).val($("#matricula___" + row).closest(".tableBodyRow").prev().find("input[name*=\"matricula___\"]").val())
+                $("#matricula___" + row).val($("#matricula___" + row).closest(".tableBodyRow").prev().find("[name*=matricula___]").val()[0]);
                 if ($("#matricula___" + row).val() != "") {
-                    FLUIGC.autocomplete("input#matricula___" + row).add({
-                        "colleagueId": $("#matricula___" + row).val()
-                    })
+                    FLUIGC.autocomplete("select#matricula___" + row).add(
+                       $("#matricula___" + row).val()
+                    ).destroy();
                 }
-                $("#nome___" + row).val($("#nome___" + row).closest(".tableBodyRow").prev().find("input[name*=\"nome___\"]").val())
+                $("#nome___" + row).val($("#nome___" + row).closest(".tableBodyRow").prev().find("[name*=nome___]").val())
                 $("#presencaData1___" + row).val($("#presencaData1___" + row).closest(".tableBodyRow").prev().find("input[name*=\"presencaData1___\"]").val())
                 $("#presencaData2___" + row).val($("#presencaData2___" + row).closest(".tableBodyRow").prev().find("input[name*=\"presencaData2___\"]").val())
                 $("#presencaData3___" + row).val($("#presencaData3___" + row).closest(".tableBodyRow").prev().find("input[name*=\"presencaData3___\"]").val())
@@ -151,50 +158,55 @@ var manipulateDOM = (function () {
         eventZoom: function (selectedItem) {
             if (selectedItem.inputName == "responsavelTreinamento") {
                 if (event.type != "load") {
-                    document.getElementById("responsavelTreinamentoID").value = selectedItem.colleagueId
+                    document.getElementById("responsavelTreinamentoID").value = selectedItem.colleagueId;
                 }
             }
 
             if (selectedItem.inputName.indexOf("matricula___") != -1) {
-                var matProperty = selectedItem.colleagueId
-                var nameProperty = selectedItem.colleagueName
-                var inputName = selectedItem.inputName
+                var matProperty = selectedItem.colleagueId;
+                var nameProperty = selectedItem.colleagueName;
+                var inputName = selectedItem.inputName;
 
                 if (!zoomFields.checkIfExists(matProperty, inputName)) {
                     if (event.type != "load") {
-                        var $matriculaField = $("input[name*=" + inputName + "]")
-                        var $nomeField = $matriculaField.closest(".fs-v-align-middle").next().find("input[name*=nome___]")
+                        var $matriculaField = $("[name*=" + inputName + "]");
+                        var $nomeField = $matriculaField.closest(".fs-v-align-middle").next().find("[name*=nome___]");
                         if (nameProperty != "" && nameProperty != undefined) {
-                            $nomeField.val(nameProperty)
-                            FLUIGC.autocomplete("#" + $nomeField.attr("id")).add({
+                            $nomeField.val(nameProperty);
+                            /* FLUIGC.autocomplete("#" + $nomeField.attr("id")).add({
                                 "colleagueName": nameProperty
-                            })
+                            }); */
+                            FLUIGC.autocomplete("#" + $nomeField.attr("id")).removeAll().add(nameProperty).destroy();
                         }
                     }
                 } else {
-                    var $matriculaField = $("input[name*=" + inputName + "]")
-                    $matriculaField.closest(".fs-v-align-middle").find("span[data-role=remove]").click()
+                    var $matriculaField = $("[name*=" + inputName + "]");
+                    $matriculaField.closest(".fs-v-align-middle").find("span[data-role=remove]").click();
                 }
             }
 
             if (selectedItem.inputName.indexOf("nome___") != -1) {
-                var matProperty = selectedItem.colleagueId
-                var nameProperty = selectedItem.colleagueName
-                var inputName = selectedItem.inputName
+                var matProperty = selectedItem.colleagueId;
+                var nameProperty = selectedItem.colleagueName;
+                var inputName = selectedItem.inputName;
                 if (!zoomFields.checkIfExists(nameProperty, inputName)) {
                     if (event.type != "load") {
-                        var $nomeField = $("input[name*=" + inputName + "]")
-                        var $matriculaField = $nomeField.closest(".fs-v-align-middle").prev().find("input[name*=matricula___]")
+                        var $nomeField = $("[name*=" + inputName + "]")
+                        var $matriculaField = $nomeField.closest(".fs-v-align-middle").prev().find("[name*=matricula___]");
                         if (matProperty != "" && matProperty != undefined) {
-                            $matriculaField.val(matProperty)
-                            FLUIGC.autocomplete("#" + $matriculaField.attr("id")).add({
+                            $matriculaField.val(matProperty);
+                            /* FLUIGC.autocomplete("#" + $matriculaField.attr("id")).add({
                                 "colleagueId": matProperty
-                            })
+                            }) */
+                            FLUIGC.autocomplete("#" + $matriculaField.attr("id"))
+                                    .removeAll()
+                                    .add(matProperty)
+                                    .destroy();
                         }
                     }
                 } else {
-                    var $nameField = $("input[name*=" + inputName + "]")
-                    $nameField.closest(".fs-v-align-middle").find("span[data-role=remove]").click()
+                    var $nameField = $("[name*=" + inputName + "]");
+                    $nameField.closest(".fs-v-align-middle").find("span[data-role=remove]").click();
                 }
             }
         },
@@ -205,17 +217,17 @@ var manipulateDOM = (function () {
          * @return Boolean: true caso existe, false caso não exista
          */
         checkIfExists: function (property, inputName) {
-            var exists = false
+            var exists = false;
             $("#tbRegistroTreinamento table tbody tr.tableBodyRow:not(:first)").each(function () {
-                var $currentMat = $(this).find("input[name*=" + inputName.substr(0, inputName.indexOf("___") + 3) + "]")
+                var $currentMat = $(this).find("[name*=" + inputName.substr(0, inputName.indexOf("___") + 3) + "]");
                 if (property == $currentMat.val()) {
                     if (inputName != $currentMat.attr("name")) {
-                        exists = true
-                        return false
+                        exists = true;
+                        return false;
                     }
                 }
-            })
-            return exists
+            });
+            return exists;
         }
     }
     /**
