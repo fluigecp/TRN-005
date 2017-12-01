@@ -8,3 +8,11 @@
 #numSolicMatrizContainer {
     margin: 10px 0px 10px 0px;
 }
+
+.hdata, .presencaData {
+    display: none;
+}
+
+.datas .col-md-2 {
+    width: 19%;
+}

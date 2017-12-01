@@ -35,9 +35,9 @@
 					<input type="hidden" name="cargoMatriz" id="cargoMatriz" />
 
 					<!-- ANALYTICS -->
-					<input type="hidden" name="custom_0" id="custom_0">
-                    <input type="hidden" name="custom_1" id="custom_1">
-                    <input type="hidden" name="custom_2" id="custom_2">
+					<input type="hidden" name="custom_0" id="custom_0" placeholder="nome_treinamento">
+                    <input type="hidden" name="custom_1" id="custom_1" placeholder="area">
+                    <input type="hidden" name="custom_2" id="custom_2" placeholder="carga_horaria">
                     <input type="hidden" name="custom_3" id="custom_3">
                     <input type="hidden" name="custom_4" id="custom_4">
                     <input type="hidden" name="custom_5" id="custom_5">
@@ -66,7 +66,7 @@
                     <input type="hidden" name="custom_28" id="custom_28">
                     <input type="hidden" name="custom_29" id="custom_29">
                     <!--FATOS-->
-                    <input type="hidden" name="fato_0" id="fato_0">
+                    <input type="hidden" name="fato_0" id="fato_0" placeholder="total_participantes">
                     <input type="hidden" name="fato_1" id="fato_1">
                     <input type="hidden" name="fato_2" id="fato_2">
                     <input type="hidden" name="fato_3" id="fato_3">
@@ -92,7 +92,7 @@
 								</div>
 							</div>
 						</div>	
-						<div class="col-md-2 col-xs-6">
+						<div class="col-md-2 col-xs-12">
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="codigo">
 								<div class="form-input">
 									<div class="form-group">
@@ -102,7 +102,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-xs-6">
+						<div class="col-md-2 col-xs-12">
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="revisao">
 								<div class="form-input">
 									<div class="form-group">
@@ -112,7 +112,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-xs-6">
+						<div class="col-md-2 col-xs-12">
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="cargaHoraria">
 								<div class="form-input">
 									<div class="form-group">
@@ -122,7 +122,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-xs-6">
+						<div class="col-md-2 col-xs-12">
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="qtdDias">
 								<div class="form-input">
 									<div class="form-group">
@@ -173,7 +173,7 @@
 						<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="responsavelTreinamento">
 							<div class="form-input">
 								<div class="form-group">
-									<label for="responsavelTreinamento">Responsável pela aplicação do treinamento</label> <strong>*</strong>
+									<label for="responsavelTreinamento">Responsável pela aplicação do treinamento<strong> *</strong></label> 
 									<input name="responsavelTreinamento" id="responsavelTreinamento" class="form-control" type="zoom" data-zoom="{
 										'displayKey':'colleagueName',
 										'datasetId':'colleague',
@@ -201,7 +201,7 @@
 				<!-- DATAS -->
 
 				<div class="row datas">
-						<div class="col-md-2 data1Container" style="width: 19%"	>					 
+						<div class="col-md-2 col-xs-12 data1Container">					 
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="data1">
 								<div class="form-input">
 									<div class="form-group">
@@ -216,7 +216,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 data2Container" style="width: 19%">
+						<div class="col-md-2 col-xs-12 data2Container">
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="data2">
 								<div class="form-input">
 									<div class="form-group">
@@ -231,7 +231,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 data3Container" style="width: 19%">
+						<div class="col-md-2 col-xs-12 data3Container">
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="data3">
 								<div class="form-input">
 									<div class="form-group">
@@ -246,7 +246,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 data4Container" style="width: 19%">
+						<div class="col-md-2 col-xs-12 data4Container">
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="data4">
 								<div class="form-input">
 									<div class="form-group">
@@ -261,7 +261,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 data5Container" style="width: 19%">
+						<div class="col-md-2 col-xs-12 data5Container">
 							<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="data5">
 								<div class="form-input">
 									<div class="form-group">
@@ -288,7 +288,7 @@
 							<div class="form-input">
 								<div class="form-group">
 									<div class="table-responsive" style="overflow-x: auto; padding-bottom: 25px;">
-										<table class="table table-striped table-bordered table-hover table-condensed" noaddbutton="true" nodeletebutton="true" style="width: 1350px; display: -moz-inline-box;" tablename="tbRegistroTreinamento">
+										<table class="table table-striped table-bordered table-hover table-condensed" noaddbutton="true" nodeletebutton="true" style="width: 100%; display: -moz-inline-box;" tablename="tbRegistroTreinamento">
 											<thead>
 												<tr class="tableHeadRow">
 													<th style="width: .1%" class="tableColumn text-center lixeira">
@@ -296,11 +296,11 @@
 													<th style="width: 30%" class="tableColumn text-center">Setor </th>
 													<th style="width: 20%" class="tableColumn text-center">Matrícula </th>
 													<th style="width: 25%" class="tableColumn text-center">Nome </th>
-													<th style="width: 5%" class="tableColumn text-center hdata1">__/__/____</th>
-													<th style="width: 5%" class="tableColumn text-center hdata2">__/__/____</th>
-													<th style="width: 5%" class="tableColumn text-center hdata3">__/__/____</th>
-													<th style="width: 5%" class="tableColumn text-center hdata4">__/__/____</th>
-													<th style="width: 5%" class="tableColumn text-center hdata5">__/__/____</th>
+													<th style="width: 5%" class="tableColumn text-center hdata hdata1"></th>
+													<th style="width: 5%" class="tableColumn text-center hdata hdata2"></th>
+													<th style="width: 5%" class="tableColumn text-center hdata hdata3"></th>
+													<th style="width: 5%" class="tableColumn text-center hdata hdata4"></th>
+													<th style="width: 5%" class="tableColumn text-center hdata hdata5"></th>
 												</tr>
 											</thead>
 											<tbody>
@@ -328,11 +328,13 @@
 													<td class="fs-v-align-middle">
 														<div class="form-input">
 															<input name="matricula" class="form-control" id="matricula" type="zoom" data-zoom="{
-																'displayKey':'colleagueId',
-																'datasetId':'colleague',
+																'displayKey':'matricula',
+																'datasetId':'wsFuncionarios',
+																'filterValues': 'situacao,Ativo',
 																'fields':[
-																	{'field':'colleagueId', 'label':'ID', 'standard':'true'},
-																	{'field':'colleagueName', 'label':'Nome'}
+																	{'field':'matricula', 'label':'ID', 'standard':'true'},
+																	{'field':'nome', 'label':'Nome'},
+																	{'field':'lotacao', 'label':'Lotação'}
 																	]
 																}">
 														</div>
@@ -341,30 +343,27 @@
 													<td class="fs-v-align-middle">
 														<div class="form-input">
 															<input name="nome" class="form-control" id="nome" type="zoom" data-zoom="{
-																'displayKey':'colleagueName',
-																'datasetId':'colleague',
+																'displayKey':'nome',
+																'datasetId':'wsFuncionarios',
+																'filterValues': 'situacao,Ativo',
 																'fields':[
-																	{'field':'colleagueId', 'label':'ID'},
-																	{'field':'colleagueName', 'label':'Nome', 'standard':'true'}
+																	{'field':'matricula', 'label':'ID', 'standard':'true'},
+																	{'field':'nome', 'label':'Nome'},
+																	{'field':'lotacao', 'label':'Lotação'}
 																	]
 																}">
 														</div>
 													</td>
 
-													<td class="fs-v-align-middle presencaData1">
-									
+													<td class="fs-v-align-middle presencaData1 presencaData">
 													</td>
-													<td class="fs-v-align-middle presencaData2">
-								
+													<td class="fs-v-align-middle presencaData2 presencaData">
 													</td>
-													<td class="fs-v-align-middle presencaData3">
-					
+													<td class="fs-v-align-middle presencaData3 presencaData">
 													</td>
-													<td class="fs-v-align-middle presencaData4">
-		
+													<td class="fs-v-align-middle presencaData4 presencaData">
 													</td>
-													<td class="fs-v-align-middle presencaData5">
-
+													<td class="fs-v-align-middle presencaData5 presencaData">
 													</td>
 												</tr>
 											</tbody>

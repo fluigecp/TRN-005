@@ -35,6 +35,9 @@ function getData() {
         var setor = modo == "VIEW" ?  $(this).find("span[name*='setor___']").html() : $(this).find("[name*='setor___']").val(); 
         var matricula = modo == "VIEW" ?  $(this).find("span[name*='matricula___']").html() : $(this).find("[name*='matricula___']").val(); 
         var nome = modo == "VIEW" ?  $(this).find("span[name*='nome___']").html() : $(this).find("[name*='nome___']").val(); 
+        setor = setor == null || setor == undefined ? "" : setor;
+        matricula = matricula == null || matricula == undefined ? "" : matricula;
+        nome = nome == null || nome == undefined ? "" : nome;
         listaPresenca.push( { "setor": setor, "matricula": matricula, "nome": nome } );
     });
     datas.push( modo == "VIEW" ? $("span[name*='data1']").html() : $("input[name*='data1']").val() );

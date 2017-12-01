@@ -74,6 +74,7 @@
                 }, manipulateDOM.actions4Listeners.changeTableHeaderDateListener);
                 // gera a mensagem com o numero da solicitação da matriz de treinamentos.
                 manipulateDOM.showMessageNumSolic();
+                $("#fato_0").val( manipulateDOM.getQtdeParticipantes() );
             }
 
             if (activity == 12 || activity == 15 || activity == 21 || activity == 26) {

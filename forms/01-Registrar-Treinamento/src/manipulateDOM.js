@@ -163,8 +163,8 @@ var manipulateDOM = (function () {
             }
 
             if (selectedItem.inputName.indexOf("matricula___") != -1) {
-                var matProperty = selectedItem.colleagueId;
-                var nameProperty = selectedItem.colleagueName;
+                var matProperty = selectedItem.matricula;
+                var nameProperty = selectedItem.nome;
                 var inputName = selectedItem.inputName;
 
                 if (!zoomFields.checkIfExists(matProperty, inputName)) {
@@ -186,8 +186,8 @@ var manipulateDOM = (function () {
             }
 
             if (selectedItem.inputName.indexOf("nome___") != -1) {
-                var matProperty = selectedItem.colleagueId;
-                var nameProperty = selectedItem.colleagueName;
+                var matProperty = selectedItem.matricula;
+                var nameProperty = selectedItem.nome;
                 var inputName = selectedItem.inputName;
                 if (!zoomFields.checkIfExists(nameProperty, inputName)) {
                     if (event.type != "load") {
@@ -366,6 +366,12 @@ var manipulateDOM = (function () {
         document.getElementById(historico).style.display = "inline"
         expandTextarea(historico)
     }
+    /**
+     * @description Retorna o total de participantes cadastrados na lista de presença.
+     */
+    var getQtdeParticipantes = function () {
+        return $(".tbRegistroTreinamentoContainer tbody tr.tableBodyRow:not(:first)").length;
+    }
     return {
         actions4Listeners: actions4Listeners,
         zoomFields: zoomFields,
@@ -379,6 +385,7 @@ var manipulateDOM = (function () {
         changeTableHeaderDate: changeTableHeaderDate,
         preencheCamposComValorPadrao: preencheCamposComValorPadrao,
         showMessageNumSolic: showMessageNumSolic,
+        getQtdeParticipantes: getQtdeParticipantes,
         expandTextareaHistorico: expandTextareaHistorico,
         mostraHistorico: mostraHistorico
     }

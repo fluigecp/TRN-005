@@ -21,6 +21,9 @@ function inputFields(form) {
 							"operacionais específicos da área " + area + " referente ao cargo de " + cargo;
 		form.setValue("objetivo", textObjetivo);
 	}
+
+	form.setValue('custom_0', form.getValue('titulo'));
+	form.setValue('custom_2', form.getValue('cargaHoraria'));
 }
 
 function converteParaFloat(variavel) {
