@@ -26,7 +26,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Registrar Treinamento</processId>
-      <version>3</version>
+      <version>6</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>0</formId>
@@ -73,8 +73,8 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>170</positionX>
-      <positionY>63</positionY>
+      <positionX>185</positionX>
+      <positionY>60</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -123,7 +123,7 @@
       <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>264</positionX>
+      <positionX>150</positionX>
       <positionY>270</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
@@ -330,8 +330,8 @@
         <version>1</version>
         <sequence>25</sequence>
       </processStatePK>
-      <stateName>Exclusivo</stateName>
-      <stateDescription>Exclusivo</stateDescription>
+      <stateName>Abertura automática?</stateName>
+      <stateDescription>Abertura automática?</stateDescription>
       <joint>false</joint>
       <initialState>false</initialState>
       <transferAttachments>false</transferAttachments>
@@ -339,7 +339,7 @@
       <formFolder>0</formFolder>
       <automatic>true</automatic>
       <positionX>300</positionX>
-      <positionY>30</positionY>
+      <positionY>20</positionY>
       <inhibitTransfer>false</inhibitTransfer>
       <stateType>1</stateType>
       <bpmnType>120</bpmnType>
@@ -377,7 +377,7 @@
       <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>630</positionX>
+      <positionX>650</positionX>
       <positionY>444</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
@@ -402,7 +402,7 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <expressionOrder>1</expressionOrder>
-        <version>3</version>
+        <version>6</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;treinamentoAprovado&quot;) == &quot;Sim&quot;</condition>
@@ -413,7 +413,7 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <expressionOrder>2</expressionOrder>
-        <version>3</version>
+        <version>6</version>
         <sequence>17</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;treinamentoAprovado&quot;) == &quot;Não&quot;</condition>
@@ -424,7 +424,7 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <expressionOrder>1</expressionOrder>
-        <version>3</version>
+        <version>6</version>
         <sequence>25</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;atividadeAutomatica&quot;) == &quot;Sim&quot;</condition>
@@ -436,7 +436,7 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <expressionOrder>2</expressionOrder>
-        <version>3</version>
+        <version>6</version>
         <sequence>25</sequence>
       </conditionProcessStatePK>
       <condition>hAPI.getCardValue(&quot;atividadeAutomatica&quot;) != &quot;Sim&quot;</condition>
@@ -563,12 +563,12 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <version>1</version>
-        <linkSequence>29</linkSequence>
+        <linkSequence>30</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>26</initialStateSequence>
-      <finalStateSequence>12</finalStateSequence>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>25</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -579,12 +579,12 @@
         <companyId>1</companyId>
         <processId>TRN-005</processId>
         <version>1</version>
-        <linkSequence>30</linkSequence>
+        <linkSequence>31</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>4</initialStateSequence>
-      <finalStateSequence>25</finalStateSequence>
+      <initialStateSequence>26</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -865,18 +865,18 @@ function getAttachments(activity, numAnexos, formato){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>3</version>
+        <version>6</version>
         <linkSequence>16</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>316</positionX>
+      <positionX>202</positionX>
       <positionY>460</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>3</version>
+        <version>6</version>
         <linkSequence>23</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -887,7 +887,7 @@ function getAttachments(activity, numAnexos, formato){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>3</version>
+        <version>6</version>
         <linkSequence>27</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -898,33 +898,33 @@ function getAttachments(activity, numAnexos, formato){&#xd;
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>3</version>
+        <version>6</version>
         <linkSequence>28</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>423</positionX>
-      <positionY>80</positionY>
+      <positionX>389</positionX>
+      <positionY>78</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>3</version>
+        <version>6</version>
         <linkSequence>28</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
-      <positionX>423</positionX>
-      <positionY>304</positionY>
+      <positionX>389</positionX>
+      <positionY>186</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>TRN-005</processId>
-        <version>3</version>
-        <linkSequence>29</linkSequence>
-        <bendSequence>1</bendSequence>
+        <version>6</version>
+        <linkSequence>28</linkSequence>
+        <bendSequence>3</bendSequence>
       </processLinkBendPK>
-      <positionX>203</positionX>
+      <positionX>389</positionX>
       <positionY>304</positionY>
     </ProcessLinkBend>
   </list>
