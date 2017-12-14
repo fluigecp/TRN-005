@@ -3,7 +3,7 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<head>
 		<title>Form</title>
-		<script type="text/javascript" src="../vcXMLRPC.js"></script>
+		<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
 		<link rel="stylesheet" type="text/css" href="http://ecp.fluigcloud.com.br/portal/resources/style-guide/css/fluig-style-guide.min.css">
 		<link rel="stylesheet" type="text/css" href="CSS_Fluig.css" />
 		<link rel="stylesheet" type="text/css" href="app.css" />
@@ -177,9 +177,10 @@
 									<input name="responsavelTreinamento" id="responsavelTreinamento" class="form-control" type="zoom" data-zoom="{
 										'displayKey':'colleagueName',
 										'datasetId':'colleague',
+										'filterValues': 'active,true',
 										'fields':[
 											{'field':'colleagueId', 'label':'ID'},
-											{'field':'colleagueName', 'label':'Nome', 'standard':'true'}
+											{'field':'colleagueName', 'label':'Nome', 'standard':'true'},
 											]
 										}">
 								</div>
