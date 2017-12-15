@@ -2915,7 +2915,7 @@
       <graphicsAlgorithm filled="false" foreground="/0/@colors.3" lineWidth="1" transparency="0.0" xsi:type="al:Polyline"/>
       <link businessObjects="flow20"/>
       <connectionDecorators active="true" location="0.5" locationRelative="true" visible="true">
-        <graphicsAlgorithm filled="false" font="/0/@fonts.0" lineWidth="1" style="/0/@styles.64" transparency="0.0" value="" x="10" xsi:type="al:Text"/>
+        <graphicsAlgorithm filled="false" font="/0/@fonts.0" lineWidth="1" style="/0/@styles.64" transparency="0.0" value="Sim" x="-16" xsi:type="al:Text" y="9"/>
       </connectionDecorators>
       <connectionDecorators location="1.0" locationRelative="true" visible="true">
         <graphicsAlgorithm background="/0/@colors.3" filled="true" foreground="/0/@colors.3" lineWidth="1" style="/0/@styles.5" transparency="0.0" xsi:type="al:Polygon">
@@ -2930,7 +2930,7 @@
       <graphicsAlgorithm filled="false" foreground="/0/@colors.3" lineWidth="1" transparency="0.0" xsi:type="al:Polyline"/>
       <link businessObjects="flow22"/>
       <connectionDecorators active="true" location="0.5" locationRelative="true" visible="true">
-        <graphicsAlgorithm filled="false" font="/0/@fonts.0" lineWidth="1" style="/0/@styles.67" transparency="0.0" value="" x="10" xsi:type="al:Text"/>
+        <graphicsAlgorithm filled="false" font="/0/@fonts.0" lineWidth="1" style="/0/@styles.67" transparency="0.0" value="N&#227;o" x="10" xsi:type="al:Text"/>
       </connectionDecorators>
       <connectionDecorators location="1.0" locationRelative="true" visible="true">
         <graphicsAlgorithm background="/0/@colors.3" filled="true" foreground="/0/@colors.3" lineWidth="1" style="/0/@styles.5" transparency="0.0" xsi:type="al:Polygon">
@@ -2961,7 +2961,7 @@
       <graphicsAlgorithm filled="false" foreground="/0/@colors.3" lineWidth="1" transparency="0.0" xsi:type="al:Polyline"/>
       <link businessObjects="flow27"/>
       <connectionDecorators active="true" location="0.5" locationRelative="true" visible="true">
-        <graphicsAlgorithm filled="false" font="/0/@fonts.0" lineWidth="1" style="/0/@styles.97" transparency="0.0" value="" x="10" xsi:type="al:Text"/>
+        <graphicsAlgorithm filled="false" font="/0/@fonts.0" lineWidth="1" style="/0/@styles.97" transparency="0.0" value="Sim" x="10" xsi:type="al:Text"/>
       </connectionDecorators>
       <connectionDecorators location="1.0" locationRelative="true" visible="true">
         <graphicsAlgorithm background="/0/@colors.3" filled="true" foreground="/0/@colors.3" lineWidth="1" style="/0/@styles.5" transparency="0.0" xsi:type="al:Polygon">
@@ -2977,7 +2977,7 @@
       <graphicsAlgorithm filled="false" foreground="/0/@colors.3" lineWidth="1" transparency="0.0" xsi:type="al:Polyline"/>
       <link businessObjects="flow28"/>
       <connectionDecorators active="true" location="0.5" locationRelative="true" visible="true">
-        <graphicsAlgorithm filled="false" font="/0/@fonts.0" lineWidth="1" style="/0/@styles.98" transparency="0.0" value="" x="10" xsi:type="al:Text"/>
+        <graphicsAlgorithm filled="false" font="/0/@fonts.0" lineWidth="1" style="/0/@styles.98" transparency="0.0" value="N&#227;o" x="10" xsi:type="al:Text"/>
       </connectionDecorators>
       <connectionDecorators location="1.0" locationRelative="true" visible="true">
         <graphicsAlgorithm background="/0/@colors.3" filled="true" foreground="/0/@colors.3" lineWidth="1" style="/0/@styles.5" transparency="0.0" xsi:type="al:Polygon">
@@ -3043,7 +3043,7 @@
     <fonts name="Arial" size="8"/>
     <fonts bold="true" name="Arial" size="8"/>
   </pi:Diagram>
-  <bpmn2:BpmnProcess author="" cardIndex="01-Registrar-Treinamento" category="Treinamento" complementsLevel="1" descriptorFields="&lt;list&gt;&#10;  &lt;org.eclipse.bpmn2.impl.BpmnProcessFormField&gt;&#10;    &lt;id&gt;campoDescritor&lt;/id&gt;&#10;    &lt;label&gt;campoDescritor&lt;/label&gt;&#10;    &lt;cardIndex&gt;01-Registrar-Treinamento&lt;/cardIndex&gt;&#10;  &lt;/org.eclipse.bpmn2.impl.BpmnProcessFormField&gt;&#10;&lt;/list&gt;" expedient="Default" extendedFields="&lt;list/&gt;" formSource="local" id="TRN-005" instruction="" keyWord="" name="Registrar Treinamento" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" serverId="Fluig Test" version="6" volume="Default"/>
+  <bpmn2:BpmnProcess author="" cardIndex="01-Registrar-Treinamento" category="Treinamento" complementsLevel="1" descriptorFields="&lt;list&gt;&#10;  &lt;org.eclipse.bpmn2.impl.BpmnProcessFormField&gt;&#10;    &lt;id&gt;campoDescritor&lt;/id&gt;&#10;    &lt;label&gt;campoDescritor&lt;/label&gt;&#10;    &lt;cardIndex&gt;01-Registrar-Treinamento&lt;/cardIndex&gt;&#10;  &lt;/org.eclipse.bpmn2.impl.BpmnProcessFormField&gt;&#10;&lt;/list&gt;" expedient="Default" extendedFields="&lt;list/&gt;" formSource="local" id="TRN-005" instruction="" keyWord="" name="Registrar Treinamento" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" serverId="Fluig Test" version="7" volume="Default"/>
   <bpmn2:BpmnStartEvent esforcoCalculo="0" expediente="" id="startevent4" initializerConfiguration="&lt;org.eclipse.bpmn2.impl.AssignmentControllerGroup&gt;&#10;  &lt;groupId&gt;WK_TRN-005_Inicial&lt;/groupId&gt;&#10;  &lt;mechanismName&gt;Grupo&lt;/mechanismName&gt;&#10;&lt;/org.eclipse.bpmn2.impl.AssignmentControllerGroup&gt;" name="In&#237;cio" outgoing="flow30" signalId="0" type="10"/>
   <bpmn2:BpmnSwimLane cores="DFDFDF" id="swimlane3" name="Treinador"/>
   <bpmn2:BpmnSwimLane cores="C0C7CC" id="swimlane2" name="Usu&#225;rio Fluig"/>
@@ -3053,15 +3053,15 @@
   <bpmn2:BpmnGateway condition="&lt;list&gt;&#10;  &lt;org.eclipse.bpmn2.impl.ConditionImpl&gt;&#10;    &lt;order&gt;1&lt;/order&gt;&#10;    &lt;expression&gt;hAPI.getCardValue(&amp;quot;treinamentoAprovado&amp;quot;) == &amp;quot;Sim&amp;quot;&lt;/expression&gt;&#10;    &lt;targetTask&gt;endevent19&lt;/targetTask&gt;&#10;  &lt;/org.eclipse.bpmn2.impl.ConditionImpl&gt;&#10;  &lt;org.eclipse.bpmn2.impl.ConditionImpl&gt;&#10;    &lt;order&gt;2&lt;/order&gt;&#10;    &lt;expression&gt;hAPI.getCardValue(&amp;quot;treinamentoAprovado&amp;quot;) == &amp;quot;N&#227;o&amp;quot;&lt;/expression&gt;&#10;    &lt;targetTask&gt;task21&lt;/targetTask&gt;&#10;  &lt;/org.eclipse.bpmn2.impl.ConditionImpl&gt;&#10;&lt;/list&gt;" id="exclusivegateway17" incoming="flow18" name="Aprovado" outgoing="flow20 flow22" type="120"/>
   <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow18" name="" sourceRef="task15" targetRef="exclusivegateway17"/>
   <bpmn2:BpmnEndEvent id="endevent19" incoming="flow20" name="Fim" signalId="0" type="60"/>
-  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow20" name="" sourceRef="exclusivegateway17" targetRef="endevent19"/>
+  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow20" name="Sim" sourceRef="exclusivegateway17" targetRef="endevent19"/>
   <bpmn2:BpmnTask authNotify="true" esforcoCalculo="0" executionAttempts="0" expediente="" id="task21" incoming="flow22" loopType="0" managerAssignmentControllerString="&lt;org.eclipse.bpmn2.impl.AssignmentControllerFormField&gt;&#10;  &lt;formField&gt;responsavelTreinamentoID&lt;/formField&gt;&#10;  &lt;mechanismName&gt;Campo Formul&#225;rio&lt;/mechanismName&gt;&#10;&lt;/org.eclipse.bpmn2.impl.AssignmentControllerFormField&gt;" managerMechanism="Campo Formul&#225;rio" name="Ajustar treinamento" outgoing="flow23" selecionaColaboradores="1" type="80"/>
-  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow22" name="" sourceRef="exclusivegateway17" targetRef="task21"/>
+  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow22" name="N&#227;o" sourceRef="exclusivegateway17" targetRef="task21"/>
   <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow23" name="" sourceRef="task21" targetRef="task15"/>
   <bpmn2:BpmnSwimLane cores="C0C7CC" id="bpmnswimlane11" name="RH"/>
   <bpmn2:BpmnGateway condition="&lt;list&gt;&#10;  &lt;org.eclipse.bpmn2.impl.ConditionImpl&gt;&#10;    &lt;order&gt;1&lt;/order&gt;&#10;    &lt;expression&gt;hAPI.getCardValue(&amp;quot;atividadeAutomatica&amp;quot;) == &amp;quot;Sim&amp;quot;&lt;/expression&gt;&#10;    &lt;targetTask&gt;task26&lt;/targetTask&gt;&#10;    &lt;mecanismoAtribuicaoConfiguracao class=&quot;org.eclipse.bpmn2.impl.AssignmentControllerColleague&quot;&gt;&#10;      &lt;colleagueId&gt;42424831807&lt;/colleagueId&gt;&#10;      &lt;mechanismName&gt;Usu&#225;rio&lt;/mechanismName&gt;&#10;    &lt;/mecanismoAtribuicaoConfiguracao&gt;&#10;  &lt;/org.eclipse.bpmn2.impl.ConditionImpl&gt;&#10;  &lt;org.eclipse.bpmn2.impl.ConditionImpl&gt;&#10;    &lt;order&gt;2&lt;/order&gt;&#10;    &lt;expression&gt;hAPI.getCardValue(&amp;quot;atividadeAutomatica&amp;quot;) != &amp;quot;Sim&amp;quot;&lt;/expression&gt;&#10;    &lt;targetTask&gt;task12&lt;/targetTask&gt;&#10;    &lt;mechanism&gt;Executor Atividade&lt;/mechanism&gt;&#10;    &lt;mecanismoAtribuicaoConfiguracao class=&quot;org.eclipse.bpmn2.impl.AssignmentControllerExecutorMechanism&quot;&gt;&#10;      &lt;idNode&gt;startevent4&lt;/idNode&gt;&#10;      &lt;returns&gt;1&lt;/returns&gt;&#10;      &lt;mechanismName&gt;Executor Atividade&lt;/mechanismName&gt;&#10;    &lt;/mecanismoAtribuicaoConfiguracao&gt;&#10;  &lt;/org.eclipse.bpmn2.impl.ConditionImpl&gt;&#10;&lt;/list&gt;" id="exclusivegateway25" incoming="flow30" name="Abertura autom&#225;tica?" outgoing="flow27 flow28" type="120"/>
   <bpmn2:BpmnTask authNotify="true" esforcoCalculo="0" executionAttempts="0" expediente="" id="task26" incoming="flow27" loopType="0" managerAssignmentControllerString="&lt;org.eclipse.bpmn2.impl.AssignmentControllerFormField&gt;&#10;  &lt;formField&gt;matResponsavel&lt;/formField&gt;&#10;  &lt;mechanismName&gt;Campo Formul&#225;rio&lt;/mechanismName&gt;&#10;&lt;/org.eclipse.bpmn2.impl.AssignmentControllerFormField&gt;" managerMechanism="Campo Formul&#225;rio" name="Detalhar treinamento" outgoing="flow31" selecionaColaboradores="1" type="80"/>
-  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow27" name="" sourceRef="exclusivegateway25" targetRef="task26"/>
-  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow28" name="" sourceRef="exclusivegateway25" targetRef="task12"/>
+  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow27" name="Sim" sourceRef="exclusivegateway25" targetRef="task26"/>
+  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow28" name="N&#227;o" sourceRef="exclusivegateway25" targetRef="task12"/>
   <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow30" name="" sourceRef="startevent4" targetRef="exclusivegateway25"/>
-  <bpmn2:SequenceFlow id="flow31" name="" sourceRef="task26" targetRef="task12"/>
+  <bpmn2:SequenceFlow atividadeFluxo="" atividadeRetorno="" extendedFields="&lt;list/&gt;" id="flow31" name="" sourceRef="task26" targetRef="task12"/>
 </xmi:XMI>

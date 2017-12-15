@@ -490,7 +490,7 @@
       <initialStateSequence>17</initialStateSequence>
       <finalStateSequence>19</finalStateSequence>
       <returnLabel></returnLabel>
-      <name></name>
+      <name>Sim</name>
       <automaticLink>false</automaticLink>
       <type>0</type>
     </ProcessLink>
@@ -506,7 +506,7 @@
       <initialStateSequence>17</initialStateSequence>
       <finalStateSequence>21</finalStateSequence>
       <returnLabel></returnLabel>
-      <name></name>
+      <name>Não</name>
       <automaticLink>false</automaticLink>
       <type>0</type>
     </ProcessLink>
@@ -538,7 +538,7 @@
       <initialStateSequence>25</initialStateSequence>
       <finalStateSequence>26</finalStateSequence>
       <returnLabel></returnLabel>
-      <name></name>
+      <name>Sim</name>
       <automaticLink>false</automaticLink>
       <type>0</type>
     </ProcessLink>
@@ -554,7 +554,7 @@
       <initialStateSequence>25</initialStateSequence>
       <finalStateSequence>12</finalStateSequence>
       <returnLabel></returnLabel>
-      <name></name>
+      <name>Não</name>
       <automaticLink>false</automaticLink>
       <type>0</type>
     </ProcessLink>
